@@ -1,8 +1,8 @@
 $("#shoot").click(function() {
-  var inpput = $("#input").val();
-$("#userChoice").append(input);
+  var input = $("#input").val();
+$("#userChoice").text(input);
 var go = Math.random();
-$("#computerChoice").text(go)
+
 if (go > .70){
 $("#computerChoice").text("Rock");
 }
@@ -10,6 +10,13 @@ else if (go > .40){
 $("#computerChoice").text("Scissors");
 }
 else {
-    ("#computerChoice").text("Paper");
+    console.log("i hate you!");
+    $("#computerChoice").text ("Paper");
+}
+var computerChoice = $("#computerChoice").val();
+
+if (input === "rock" && Computerchoice === "rock" ){
+    Message = ("You both suck")
+    $("#result").text ("message")
 }
 });
